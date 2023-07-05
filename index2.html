@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-heading">
+        <h1>All</h1>  
+        <h1>about</h1>
+        <h1>music</h1>
+    </div>
+    <div class="container_about_page">
+        <div class="about_page">
+            <p class="about_page_heading">What is a Teen magazin?</p>
+            <p class="about_page_main-text">
+                Teen magazines are magazines aimed at teenage readers. They usually consist of gossip, news, fashion tips and interviews and may include posters, stickers,
+                small samples of cosmetics or other products and inserts. ...
+            </p>
+            <a class="about_page_link-text" href="https://en.wikipedia.org/wiki/Teen_magazine">click here for more!</a>
+            <p class="about_page_side-text">For now our DIGITAL Teen magazin is only about music</p>
+        </div>
+    </div>
+
+    <div class="circle_container">
+        <div class="circle">
+            <div class="circle-inner">
+                    <a href="index4.html">Summer hits</a>
+                    <a href="index4.html">2012 and 2022</a>
+            </div>
+        </div>
+        <div class="circle">
+            <div class="circle-inner">
+                <a href="index5.html">Bands</a>
+                <a href="index5.html">and Singers</a>
+            </div>
+        </div>
+        <div class="circle">
+            <div class="circle-inner">
+                <a href="index3.html">WM songs</a>
+                <a href="index3.html">2010-2022</a>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-image: url(j5.jpg);
+            min-height: 740px;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .main-heading{
+            width: 100%;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 0px 0px 100px 100px;
+            cursor: default;
+        }
+        div h1{
+            margin: 20px;
+            font-size: 100px;
+            color: white;
+            font-family: sans-serif;
+            letter-spacing: 5px;
+        }
+        .container_about_page{
+            width: 100%;
+            height: 200px;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+            cursor: default;
+        }
+        .about_page{
+            width: 95%;
+            height: 90%;
+        }
+        .about_page_heading{
+            font-family: sans-serif;
+            font-size: 30px;
+            margin-top: 0px;
+            color: white;
+        }
+        .about_page_main-text{
+            margin-top: 25px;
+            font-family: sans-serif;
+            font-size: 17px;
+            color: white;
+        }
+        .about_page_link-text{
+            color: rgb(0, 179, 255);
+            font-size: 17px;
+            text-decoration: none;
+            font-family: sans-serif;
+        }
+        .about_page_side-text{
+            font-family: sans-serif;
+            font-size: 17px;
+            color: white;
+        }
+        .circle_container{
+            margin-top: 30px;
+            width: 90%;
+            margin-left: 5%;
+            height: 350px;
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .circle{
+            height: 270px;
+            width: 270px;
+            background-color: transparent;
+            margin: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 16px solid transparent;
+            border-top: 16px solid transparent;
+        }
+        .circle:hover{
+            animation: 4s a linear infinite;
+            border-top: 16px solid white;
+            transition: 100ms;
+        }
+        @keyframes a {
+            0%{
+                rotate: 0deg;
+            }
+            25%{
+                rotate: 180deg;
+            }
+            50%{
+                rotate: 360deg;
+            }
+            75%{
+                rotate: 180deg;
+            }
+            100%{
+                rotate: 0deg;
+            }
+        }
+        .circle:hover .circle-inner{
+            animation: 4s b linear infinite;
+            box-shadow: 0px 0px 5px 0px white;
+            height: 244px;
+            width: 244px;
+        }
+        @keyframes b {
+            0%{
+                rotate: 0deg;
+            }
+            25%{
+                rotate: -180deg;
+            }
+            50%{
+                rotate: -360deg;
+            }
+            75%{
+                rotate: -180deg;
+            }
+            100%{
+                rotate: 0deg;
+            }
+        }
+        .circle-inner{
+            height: 244px;
+            width: 244px;
+            background-color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            transition: 250ms;
+        }
+        div div div a {
+            font-size: 30px;
+            font-family: sans-serif;
+            margin: 0;
+            cursor: pointer;
+            color: black;
+            text-decoration: none;
+        }
+    </style>
+
+</body>
+</html>
